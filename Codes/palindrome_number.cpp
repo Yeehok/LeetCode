@@ -1,6 +1,3 @@
-#include <iostream>
-#include <cstdlib>
-
 class Solution {
 public:
     bool isPalindrome(int x) {
@@ -23,12 +20,3 @@ public:
         return true;
     }
 };
-
-int main()
-{
-    Solution sol;
-
-    std::cout << sol.isPalindrome(-10);
-
-    return 0;
-}
