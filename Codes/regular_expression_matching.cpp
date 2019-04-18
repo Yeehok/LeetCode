@@ -4,13 +4,6 @@ public:
         if (a == b) return true;
         return (a == '.' || b == '.');
     }
-
-    const char &GetLast(const char &a, const char &b) {
-        if (a == '.') {
-            return b;
-        }
-        return a;
-    }
     
     bool TrySolve(const char *s, const char *p, int i, int j, int resume, const char &last, const int &s_len, const int &p_len) {
         if (i >= s_len && j >= p_len) return true;
